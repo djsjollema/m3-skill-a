@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bit : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
-    bool state = false;
+    public bool state = false;
 
     void Start()
     {
@@ -13,18 +13,15 @@ public class Bit : MonoBehaviour
         spriteRenderer.color = Color.green;
     }
 
-
     void Update()
     {
-
         if (state)
         {
             spriteRenderer.color = Color.green;
         } else
         {
             spriteRenderer.color = Color.red;
-        }
-        
+        }  
     }
 
     private void OnMouseUp()
